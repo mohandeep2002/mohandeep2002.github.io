@@ -1,0 +1,208 @@
+body, .card{
+    /* background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");*/
+    /* background-image: url('image.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #191919;
+  }
+.skill-img{
+  width: 5rem;
+}
+.hoverable {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverable:hover {
+  transform: scale(1.1);
+}
+
+.icon-large {
+    font-size: 28px;
+  }
+.rounded-circle {
+    border-radius: 100%;
+    width: 27rem;
+    height: 27rem;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+.for-photo{
+    max-width: 50%;
+    max-height: fit-content;
+    border-radius: 10%;
+}
+.left-text {
+    margin-left: -200px; /* Move the text 50px to the left */
+  }
+  .right-text {
+    margin-left: 350px; /* Move the text 50px to the left */
+  }
+  body{
+    background-color: #191919;
+    }
+    .main-timeline-section{
+    position: relative;
+    width: 100%;
+    margin:auto;
+    }
+    .main-timeline-section .timeline-start,
+    .main-timeline-section .timeline-end {
+    background: #0093D1;
+    border-radius:100px;
+    margin: 0 auto;
+    width:30px;
+    height:30px;
+    }
+    .main-timeline-section .conference-center-line {
+    position: absolute;
+    width: 4px;
+    height:100%;
+    top: 0;
+    left:50%;
+    margin-left: -2px;
+    background:#0093D1;
+    z-index: -1;
+    }
+    .timeline-article{
+    width:100%;
+    position:relative;
+    margin:40px 0px;
+    min-height: 135px;
+    z-index: 0;
+    }
+    .timeline-article .content-date{
+    position: absolute;
+    top:33%;
+    left:50%;
+    font-size:18px;
+    margin-left: -150px;
+    transform: translateY(50%);
+    }
+    .timeline-article .meta-date {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width:20px;
+    height:20px;
+    transform: translateY(-50%);
+    margin-left: -11px;
+    border-radius: 100%;
+    background:#191919;
+    border:1px solid #0093D1;
+    }
+    .timeline-article .content-box{
+    position:absolute;
+    box-shadow: 2px 2px 4px 0px #c1c1c1;
+    border:1px solid #0093D1;
+    border-radius: 5px;
+    background-color: #191919;
+    width:40%;
+    top:50%;
+    transform: translateY(-50%);
+    padding:8px;
+    left:50%;
+    margin-left:50px;
+    }
+    .content-left-container .content-box{
+    left:5%;
+    margin-left: 0px;
+    }
+    .content-left-container .content-date{
+    margin-left: 50px;
+    }
+    .content-right-container .content-box:before{
+    content: " ";
+    position:absolute;
+    left:-10px;
+    top:40%;
+    transform: translateX(-50%);
+    border:10px solid transparent;
+    border-right-color:#0093D1;
+    display:block;
+    }
+    .content-left-container .content-box:before{
+    content: " ";
+    position:absolute;
+    top:40%;
+    right:-30px;
+    transform: translateX(-50%);
+    border:10px solid transparent;
+    border-left-color:#0093D1;
+    }
+    @media (max-width:460px){
+    .timeline-article.content-left-container .content-box{
+    left: -10px;
+    }
+    .timeline-article .content-box p{
+    height: 100px;
+    overflow: hidden;
+    }
+    }
+    .timeline-wrapper {
+      position: relative;
+      padding: 22px 0;
+    }
+    .timeline-wrapper:last-child:before {
+      height: 0;
+    }
+    .timeline-wrapper:before {
+      content: "";
+      background: #6c757d;
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      left: 38px;
+    }
+    
+    .timeline-yr {
+      background: #6c757d;
+      border-radius: 100%;
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      line-height: 75px;
+      text-align: center;
+    }
+    .timeline-yr span {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      line-height: 75px;
+    }
+    
+    .timeline-info {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 500px;
+      margin-left: 6em;
+    }
+    .timeline-info small {
+      color: #6c757d;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 15px;
+    }
+
+
+
+
+    /* .navbar-nav {
+      margin: 0 auto; 
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    } */
+    /*
+    @media (min-width: 576px) {
+      .navbar-nav {
+        flex-direction: row;
+      }
+    }
+     */
