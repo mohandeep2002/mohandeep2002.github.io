@@ -1,11 +1,23 @@
-function daysAgo(dateString) {
-  const inpudate = new Date(dateString);
+function timeAgo(dateString) {
+  const inputDate = new Date(dateString);
   const currentDate = new Date();
-  const timeDifference = currentDate - inpudate;
-  const daysDiffernece = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  return daysDiffernece;
+  const timeDifference = currentDate - inputDate;
+  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+  if (daysDifference > 365) {
+    const years = Math.floor(daysDifference / 365);
+    return `${years} ${years === 1 ? "year" : "years"} ago`;
+  } else if (daysDifference > 30) {
+    const months = Math.floor(daysDifference / 30);
+    return `${months} ${months === 1 ? "month" : "months"} ago`;
+  } else {
+    return `${daysDifference} ${daysDifference === 1 ? "day" : "days"} ago`;
+  }
 }
 const unityNotesAppDate = "2023-10-12";
-document.getElementById("unityNotesApp").textContent = `${daysAgo(
-  unityNotesAppDate
-)} days ago`;
+document.getElementById("unityNotesApp").textContent =
+  timeAgo(unityNotesAppDate);
+
+const spaceShooterDate = "2022-06-04";
+
+document.getElementById("spaceShooter").textContent = timeAgo(spaceShooterDate);
