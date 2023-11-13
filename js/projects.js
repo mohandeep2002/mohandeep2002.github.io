@@ -19,5 +19,7 @@ document.getElementById("unityNotesApp").textContent =
   timeAgo(unityNotesAppDate);
 
 const spaceShooterDate = "2022-06-04";
-
 document.getElementById("spaceShooter").textContent = timeAgo(spaceShooterDate);
+console.log("Everything is working fine ");
+console.log(timeAgo("2002-05-02"));
+console.log(timeAgo("2022-06-04"));
